@@ -1,0 +1,303 @@
+/* Navigation Bar */
+
+.grid-container-topnav {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding-bottom: 25px;
+}
+
+nav{
+    background-color:green;
+    margin-right: 90px;
+    margin-left: 90px;
+    overflow: hidden;
+}
+
+nav img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-left: 8.5cm;
+}
+
+nav ul {
+    padding-top: 80px;
+    float: right;
+} 
+
+nav li {
+    list-style-type: none;
+    height: 24px;
+    margin-bottom: 4px;
+    display: inline;
+}
+
+nav li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    line-height: 0px;
+    padding: 5px 15px;
+    opacity: 0.7;
+}
+
+nav a:hover {
+    background-color: #fff59d;
+    color: #f7b71d;
+}
+
+/* End Navigation Bar */
+
+/* Start Membership Page */
+
+main {
+    background-color: #fff8b6;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-style: solid;
+    border-color: #8bc34a;
+    border-width: 5px;
+}
+
+main h1 {
+    margin-left: 3cm;
+    margin-right: 3cm;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #118a7e;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main p{
+    margin-left: 3cm;
+    font-size: 30px;
+    color: #118a7e;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    position: relative;
+    margin-left: 90px;
+    margin-right: 90px;
+    grid-template-columns: auto auto;
+    background-color:  #fff8b6;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+div.grid-container{
+    position: relative;
+    border-style: solid;
+    border-color: #8bc34a;
+    border-width: 5px;
+    background-color: #fff8b6;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.grid-container h2 {
+    color:#29668b;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 15px;
+}
+
+.grid-container ul{
+    text-align: left;
+}
+
+.grid-container li {
+    color: #29668b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+/* End Membership Page */
+
+/* Start Footer */
+
+.grid-container-footer {
+    display: grid;
+    margin-left: 90px;
+    margin-right: 90px;
+    grid-template-columns: auto auto auto;
+    background-color: #8bc34a;
+    padding: 10px;
+}
+
+.grid-quick-links h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 75px;
+}
+
+.grid-quick-links ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.grid-quick-links li a{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 0px;
+    padding: 15px;
+    padding-left: 55px;
+}
+
+.grid-contact-us h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+.grid-address > p{
+    text-indent: 30px;
+    color: white;
+}
+
+.grid-address a{
+    color: white;
+    text-decoration: none;
+}
+
+#map{
+    padding-top: 50px;
+    padding-right: 50px;
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+    float: center;
+}
+
+/* End Footer */
+
+/* Phone View */
+@media only screen and (max-width:480px) {
+
+   /* navigation bar */
+   .grid-container-topnav img {
+    float: left;
+    margin-left:35px;
+    width: 75%;
+    height: auto;
+    }
+
+    .grid-container-topnav {
+    display: inline-block;
+    }
+
+    .grid-container-topnav li a {
+    float: center;
+    font-size: 12px;
+    }
+    /* end navigation bar */
+    /* main */
+    main {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    main h1 {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 30px;
+    }
+
+    main p {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .grid-container {
+        display: inline-block;
+    }
+
+    div.grid-container {
+       padding-left: 0px;
+       padding-right: 0px;
+    }
+
+    div.grid-container h2 {
+        font-size: 20px;
+    }
+
+    .grid-container li {
+        font-size: 15px;
+    }
+
+    /* footer */
+    .grid-container-footer {
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .grid-quick-links h3 {
+      padding-left: 25px;
+    }
+
+    .grid-quick-links li a {
+        padding-left: 15px;
+    }
+
+    #map {
+        padding-left: 45px;
+    }
+}
+    /* End Phone View */
+
+    /* Tablet View */
+
+    @media only screen and (min-width:481px) and (max-width:1024px) {
+         /* navigation bar */
+    nav img {
+        float: center;
+        margin-left: 105px;
+    }
+    
+    .grid-container-topnav {
+        display: inline-block;
+    }
+
+    nav li {
+        float: center;
+    }
+    /* end navigation bar */
+
+    /* main */
+    main p {
+        margin-left: 25px;
+        margin-right: 75px;
+        font-size: 25px;
+    }
+    }
+    
+    /* End Tablet View */
